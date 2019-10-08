@@ -70,6 +70,7 @@ h1.header sub {
 
 h2{
 	font-size: 2rem;
+	margin: 0 0 1rem 0;
 }
 
 hr {
@@ -93,7 +94,7 @@ header section:last-child {
 }
 
 #order1{
-	
+	list-style-type: decimal;
 }
 
 .right {
@@ -125,7 +126,29 @@ header section:last-child {
 	text-transform: uppercase;
 }
 
-.verticalImage{
-
+.verticalImage {
 	float: left;
+	width: 33.3333%;
 }
+
+.recipe {
+	width: 66.6666%;
+}
+
+.recipe ul, ol {
+	margin: 0 0 0 1rem;
+}
+
+.recipe li {
+	margin: 0 0 1rem 0;
+}
+
+.recipe li:last-child {
+	margin: 0;
+}
+
+.clearfix:after {
+	content: "";
+	display: table;
+	clear: both;
+ }
